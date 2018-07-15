@@ -1,0 +1,9 @@
+.messages {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#timestamp {
+  border-bottom: 1px solid;
+}
