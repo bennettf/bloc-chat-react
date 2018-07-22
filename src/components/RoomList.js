@@ -40,7 +40,7 @@ handleSubmit(e) {
             {this.state.rooms.map((room, index) =>
               <li
                 key={index}
-                onClick={() => this.props.changeActiveRoom(room)}>
+                onClick={() => this.props.setActiveRoom(room)}>
                 {room.name}
               </li>
           )}
