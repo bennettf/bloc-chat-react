@@ -56,7 +56,10 @@ setUser(user){
             />
         <MessageList
           firebase={firebase}
-          activeRoom={this.state.activeRoom}/>
+          activeRoom={this.state.activeRoom}
+          user={this.state.activeUser}
+          setUser={this.setUser}
+          />
           </section>
           </main>
       </div>

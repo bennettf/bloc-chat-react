@@ -27,16 +27,16 @@ class User extends Component {
   }
 
   render(){
-    const currentUser = this.props.user === null ? "Guest" : this.props.userdisplayName
+    const currentUser = this.props.user === null ? "Guest" : this.props.user.displayName
 
     return(
       <div>
       <span>Logged in as: {currentUser}</span>
       <button type = "button" className = "sign-in" onClick={this.signIn}>
-      Sign-in
+        Sign-in
       </button>
-      <button type = "button" className = "sign-off" onClick={this.signOff}>
-      Logout
+      <button type = "button" className = "sign-off" onClick={this.signOut}>
+        Logout
       </button>
       </div>
     )
